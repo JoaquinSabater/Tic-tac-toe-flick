@@ -1,0 +1,115 @@
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+  background-color:#181A18;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.leftPanel {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.buttonsPanel {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  grid-gap: 15px;
+  justify-content: center;
+  
+}
+
+#button:hover{
+  border: 2px;
+  color: rgb(255, 255, 255);
+}
+
+.colorBtn {
+  height: 40px;
+  width: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+.colorBtn:hover {
+  outline: none;
+  border: 2px solid rgb(255, 255, 255);
+}
+
+.turnsPanel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+.capturedPanel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.turnsLab {
+  text-transform: uppercase;
+}
+
+.turnsNum {
+  margin-top: 10px;
+}
+
+.board {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: repeat(14, 40px);
+  grid-template-rows: repeat(14, 40px);
+}
+
+
+
+.scroll-bg{
+  width: 500px;
+}
+.scroll-div{
+  width: 250px;
+  height: 400px;
+  overflow: hidden;
+  overflow-y: scroll;
+  
+}
+.scroll-object{
+  font-size: 15px;
+  padding: 20px;
+  background-color: #181A18;
+  align-items: center;
+}
+
+.record{
+  height: 40px;
+  width: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+.gameButtons{
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.gameButtons:hover{
+  outline: none;
+  border: 2px solid rgb(255, 255, 255);
+}
+.recordPanel{
+  text-transform: uppercase;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
